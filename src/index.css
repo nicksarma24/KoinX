@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Public Sans", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #eff2f5;
+}
+
+.slick-slide div:nth-child(1) {
+  margin-right: 10px;
+}
+
+.slick-next {
+  right: -15px;
+}
+
+.slick-next::before {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.44);
+  line-height: 1.2;
+}
