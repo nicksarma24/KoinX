@@ -58,8 +58,8 @@ const TrendingCarousel = () => {
                   +0.52%
                 </div>
               </div>
-              <div className="text-lg font-semibold">
-                {coin.item.data.price}
+              <div className="text-lg font-semibold mx-2">
+                {coin.item.data.price.toFixed(5)}
               </div>
               <img
                 src={coin.item.data.sparkline}
@@ -87,7 +87,7 @@ const TrendingCarousel = () => {
             </div>
             <div
               className="text-lg font-semibold"
-              dangerouslySetInnerHTML={{ __html: coin.item.data.price }}
+              dangerouslySetInnerHTML={{ __html: coin.item.data.price.toFixed(5) }}
             ></div>
             <img src={coin.item.data.sparkline} alt="svg" className="w-full" />
           </div>
